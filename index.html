@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>Jogo da Forca</title>
+        <link rel="stylesheet" type="text/css" href="frontend.css">
+		
+    </head>
+    <body>
+        <div id="container">
+            <div id="interactor">
+                <table>
+                    <tr>
+                        <td>
+                            <select id="chuteLetras">
+                            </select> 
+                        </td>
+                        <td>
+                            <button class="chute" onclick="clickLetra()" disabled>
+                                CHUTE
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="chutePalavra">
+                        </td>
+                        <td>
+                            <button class="chute" onclick="clickPalavra()" disabled>
+                                CHUTE
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="shower">
+                <table>
+                    <tr>
+                        <td>
+                            <p id="mostraPalavra">Palavra: </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="mostraDica">Dica: </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="erroLetra">Erros: </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div id="forca">
+                <img id="state" src="img/start.jpg" onclick="start()">
+            </div>
+        </div>
+        <script src="backend.js"></script>
+    </body>
+</html>
